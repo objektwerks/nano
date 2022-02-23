@@ -11,5 +11,6 @@ Model
 * Layer 1 ---> * QuantumCell
 * Circuit 1 ---> * Layer
 * Router 1 ---> * Circuit
+* Antenna
 * Router 1 ---> 1 Transceiver | NetworkInterface
 * NanoNetwork 1 ---> * NanoParticle
