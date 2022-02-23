@@ -1,6 +1,8 @@
 package nano
 
-sealed trait NanoParticle
+sealed trait Graphene
+
+sealed trait NanoParticle extends Graphene
 
 final case class QuantumDot() extends NanoParticle
 
