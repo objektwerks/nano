@@ -14,4 +14,6 @@ Model
 * Router 1 ---> * Circuit
 * Antenna
 * Router 1 ---> 1 Transceiver | NetworkInterface
+* Sensor
+* Actuator
 * NanoNetwork 1 ---> * NanoParticle
