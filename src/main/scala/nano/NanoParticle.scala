@@ -27,6 +27,8 @@ enum Walled:
 
 final case class CarbonNanoTube(walled: Walled) extends NanoParticle
 
+final case class Ribbon() extends NanoParticle
+
 final case class Signal(quantumDots: Seq[QuantumDot]) extends NanoParticle
 
 final case class Sensor() extends NanoParticle

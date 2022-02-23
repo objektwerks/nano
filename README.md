@@ -14,6 +14,7 @@ Model
 * Router 1 ---> * Circuit
 * Antenna
 * Router 1 ---> 1 Transceiver | NetworkInterface
+* Ribbon
 * Signal 1 ---> * QuantumDot
 * Sensor
 * Actuator
