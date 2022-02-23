@@ -1,6 +1,6 @@
 Nano
 -------
->Random musings on nano tech.
+>Random musings on nanoe.
 
 Model
 -----
