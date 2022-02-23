@@ -26,3 +26,5 @@ enum Walled:
   case single, multi
 
 final case class CarbonNanoTube(walled: Walled) extends NanoParticle
+
+final case class Sensor() extends NanoParticle
