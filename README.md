@@ -4,8 +4,8 @@ Nano
 
 Model
 -----
->All classes extend NanoParticle less NanoNetwork.
-* NanoParticle
+>All classes extend NanoParticle and Graphene less NanoNetwork.
+* NanoParticle ---> Graphene
 * CarbonNanoTube
 * QuantumCell 1 ---> * QuantumDot
 * Layer 1 ---> * QuantumCell
