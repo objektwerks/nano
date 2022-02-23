@@ -26,4 +26,4 @@ Scale
 >Measurements to nanometers:
 1. meter = 1,000,000,000
 2. millimeter = 1,000,000
-3. micrometer = 1000
+3. micrometer = 1,000
