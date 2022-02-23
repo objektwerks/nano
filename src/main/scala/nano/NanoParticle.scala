@@ -11,3 +11,5 @@ final case class Layer(quantumCells: Seq[QuantumCell]) extends NanoParticle
 final case class Circuit(layers: Seq[Layer]) extends NanoParticle
 
 final case class Router(circuits: Seq[Circuit]) extends NanoParticle
+
+final case class NetworkInterface(circuits: Seq[Circuit]) extends NanoParticle
