@@ -18,4 +18,7 @@ final case class Router(circuits: Seq[Circuit], transceiver: Transceiver, networ
 
 final case class NetworkInterface(circuits: Seq[Circuit]) extends NanoParticle
 
-final case class CarbonNanoTube(multiWalled: Boolean = true) extends NanoParticle
+enum Walled:
+  case single, multi
+
+final case class CarbonNanoTube(walled: Walled) extends NanoParticle
