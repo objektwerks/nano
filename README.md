@@ -20,3 +20,7 @@ Model
 * Actuator
 * NanoNetwork 1 ---> * NanoParticle
 >A ***wireless*** NanoNetwork may contain multiple Routers, Transceivers and NetworkInterfaces.
+
+Nanometer
+---------
+>1 billion nanameters equates to 1 meter.
