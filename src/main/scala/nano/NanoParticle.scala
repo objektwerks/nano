@@ -18,12 +18,12 @@ final case class Antenna() extends NanoParticle
 
 final case class Transceiver(circuits: Seq[Circuit]) extends NanoParticle
 
-final case class Router(macAddress: String,
-                        circuits: Seq[Circuit],
+final case class Router(circuits: Seq[Circuit],
                         transceiver: Transceiver,
                         networkInterface: NetworkInterface) extends NanoParticle
 
-final case class NetworkInterface(circuits: Seq[Circuit]) extends NanoParticle
+type MAC = String                        
+final case class NetworkInterface(mac: MAC, circuits: Seq[Circuit]) extends NanoParticle
 
 enum Walled:
   case single, multi
