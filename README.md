@@ -4,7 +4,7 @@ Nano
 
 Model
 -----
->All classes extend NanoParticle and Graphene less NanoNetwork.
+>All classes extend NanoParticle and Graphene, less NanoNetwork.
 * NanoParticle ---> Graphene
 * Hydrogel
 * CarbonNanoTube 1 ---> 1 Walled
@@ -19,3 +19,4 @@ Model
 * Sensor
 * Actuator
 * NanoNetwork 1 ---> * NanoParticle
+>Within a NanoNetwork, multiple Routers, Transceivers and NetworkInterfaces exist.
