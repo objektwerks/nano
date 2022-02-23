@@ -21,8 +21,8 @@ Model
 * NanoNetwork 1 ---> * NanoParticle
 >A ***wireless*** NanoNetwork may contain multiple Routers, Transceivers and NetworkInterfaces.
 
-Nano Scale
-----------
+Scale
+-----
 >Measurements to nanometers:
 1. meter = 1,000,000,000
 2. millimeter = 1,000,000
