@@ -6,6 +6,7 @@ Model
 -----
 >All classes extend NanoParticle and Graphene less NanoNetwork.
 * NanoParticle ---> Graphene
+* Hydrogel
 * CarbonNanoTube(Walled)
 * QuantumCell 1 ---> * QuantumDot
 * Layer 1 ---> * QuantumCell
