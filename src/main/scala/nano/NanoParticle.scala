@@ -19,3 +19,5 @@ final case class NetworkInterface(circuits: Seq[Circuit]) extends NanoParticle
 final case class CarbonNanoTube(multiWalled: Boolean = true) extends NanoParticle
 
 final case class NanoNode() extends NanoParticle
+
+final case class NanoNetwork(nanoParticles: Seq[NanoParticle]) extends NanoParticle
