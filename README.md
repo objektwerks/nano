@@ -19,4 +19,4 @@ Model
 * Sensor
 * Actuator
 * NanoNetwork 1 ---> * NanoParticle
->Within a NanoNetwork, multiple Routers, Transceivers and NetworkInterfaces exist.
+>A NanoNetwork may contain multiple Routers, Transceivers and NetworkInterfaces.
