@@ -18,6 +18,8 @@ given CanEqual[MAC, MAC] = CanEqual.derived
 
 extension (mac: MAC)
   def address: String = mac
+
+extension (mac: String)
   def display: String =
     val colon = ':'
     val chars = mac.toArray
