@@ -22,10 +22,10 @@ extension (mac: MAC)
     val colon = ':'
     val chars = mac.toArray
     val builder = mutable.StringBuilder()
-    builder.append(chars(0)).append(chars(1)).append(colon)
-    builder.append(chars(2)).append(chars(3)).append(colon)
-    builder.append(chars(4)).append(chars(5)).append(colon)
-    builder.append(chars(6)).append(chars(7)).append(colon)
-    builder.append(chars(8)).append(chars(9)).append(colon)
-    builder.append(chars(10)).append(chars(11))
+    builder += chars(0) += chars(1) += colon
+    builder += chars(2) += chars(3) += colon
+    builder += chars(4) += chars(5) += colon
+    builder += chars(6) += chars(7) += colon
+    builder += chars(8) += chars(9) += colon
+    builder += chars(10) += chars(11)
     builder.toString
