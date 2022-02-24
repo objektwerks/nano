@@ -31,14 +31,4 @@ extension (mac: MAC)
     builder += chars(8) += chars(9) += colon
     builder += chars(10) += chars(11)
     builder.toString
-  def number: Int =
-    val base = 16
-    val chars = mac.toArray
-    var n = 0
-    n += Integer.parseInt( s"${chars(0)}${chars(1)}", base )
-    n += Integer.parseInt( s"${chars(2)}${chars(3)}", base )
-    n += Integer.parseInt( s"${chars(4)}${chars(5)}", base )
-    n += Integer.parseInt( s"${chars(6)}${chars(7)}", base )
-    n += Integer.parseInt( s"${chars(8)}${chars(9)}", base )
-    n += Integer.parseInt( s"${chars(10)}${chars(11)}", base )
-    n
+  def number: Int = address.toLowerCase.toList.map("0123456789abcdef".indexOf(_)).reduce(_ * 16 + _)

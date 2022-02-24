@@ -19,5 +19,5 @@ class MACTest extends AnyFunSuite with Matchers:
   }
 
   test("number mac") {
-    MAC(address).foreach(a => a.number shouldBe 876)
+    MAC(address).foreach(a => a.number shouldBe 1011217594)
   }
