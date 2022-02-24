@@ -20,6 +20,8 @@ class MACTest extends AnyFunSuite with Matchers:
 
   test("number mac") {
     MAC(address).foreach(a => a.number shouldBe 1011217594)
+    println( java.lang.Integer.parseInt("cafe", 16) )
     println( "CAFE".toLowerCase.toList.map(MAC.hexChars.indexOf(_)).reduce(_ * 16 + _) )
     println( address.toLowerCase.toList.map(MAC.hexChars.indexOf(_)).reduce(_ * 16 + _) )
+    println( java.lang.Long.parseLong("50ed3c45f4ba", 16) )
   }

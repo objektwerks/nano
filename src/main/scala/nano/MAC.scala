@@ -33,4 +33,4 @@ extension (mac: MAC)
     builder += chars(8) += chars(9) += colon
     builder += chars(10) += chars(11)
     builder.toString
-  def number: Int = address.toLowerCase.toList.map(MAC.hexChars.indexOf(_)).reduce(_ * 16 + _)
+  def number: Long = java.lang.Long.parseLong(address, 16)
