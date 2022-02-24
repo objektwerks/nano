@@ -1,6 +1,6 @@
 package nano
 
-import java.lang.Integer
+import java.lang.Long
 
 import scala.language.strictEquality
 import scala.collection.mutable
@@ -35,10 +35,10 @@ extension (mac: MAC)
     val base = 16
     val chars = mac.toArray
     var n = 0L
-    n += Integer.parseInt( s"${chars(0)}${chars(1)}", base )
-    n += Integer.parseInt( s"${chars(2)}${chars(3)}", base )
-    n += Integer.parseInt( s"${chars(4)}${chars(5)}", base )
-    n += Integer.parseInt( s"${chars(6)}${chars(7)}", base )
-    n += Integer.parseInt( s"${chars(8)}${chars(9)}", base )
-    n += Integer.parseInt( s"${chars(10)}${chars(11)}", base )
+    n += Long.parseLong( s"${chars(0)}${chars(1)}", base )
+    n += Long.parseLong( s"${chars(2)}${chars(3)}", base )
+    n += Long.parseLong( s"${chars(4)}${chars(5)}", base )
+    n += Long.parseLong( s"${chars(6)}${chars(7)}", base )
+    n += Long.parseLong( s"${chars(8)}${chars(9)}", base )
+    n += Long.parseLong( s"${chars(10)}${chars(11)}", base )
     n
