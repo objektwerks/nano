@@ -14,4 +14,5 @@ class MACTest extends AnyFunSuite with Matchers:
   test("invalid mac") {
     val mac = MAC("1a2b3c")
     mac.isLeft shouldBe true
+    mac.foreach(a => a shouldBe "")
   }
