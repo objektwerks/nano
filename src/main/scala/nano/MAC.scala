@@ -32,12 +32,13 @@ extension (mac: MAC)
     builder += chars(10) += chars(11)
     builder.toString
   def number: Long =
+    val base = 16
     val chars = mac.toArray
-    val builder = mutable.ArrayBuffer[Long]()
-    builder += Integer.parseInt( s"${chars(0)}${chars(1)}", 16 )
-    builder += Integer.parseInt( s"${chars(2)}${chars(3)}", 16 )
-    builder += Integer.parseInt( s"${chars(4)}${chars(5)}", 16 )
-    builder += Integer.parseInt( s"${chars(6)}${chars(7)}", 16 )
-    builder += Integer.parseInt( s"${chars(8)}${chars(9)}", 16 )
-    builder += Integer.parseInt( s"${chars(10)}${chars(11)}", 16 )
-    builder.sum
+    var builder = 0L
+    builder += Integer.parseInt( s"${chars(0)}${chars(1)}", base )
+    builder += Integer.parseInt( s"${chars(2)}${chars(3)}", base )
+    builder += Integer.parseInt( s"${chars(4)}${chars(5)}", base )
+    builder += Integer.parseInt( s"${chars(6)}${chars(7)}", base )
+    builder += Integer.parseInt( s"${chars(8)}${chars(9)}", base )
+    builder += Integer.parseInt( s"${chars(10)}${chars(11)}", base )
+    builder
