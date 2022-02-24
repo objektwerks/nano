@@ -22,3 +22,9 @@ class MACTest extends AnyFunSuite with Matchers:
     val mac = MAC(address)
     mac.foreach(a => a.display shouldBe "1a:2b:3c:4d:5e:6f")
   }
+
+  test("number mac") {
+    val mac = MAC(address)
+    mac.foreach(a => a.number shouldBe 411)
+    mac.foreach(a => println(a.number))
+  }
