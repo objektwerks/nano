@@ -1,7 +1,5 @@
 package nano
 
-import java.lang.Integer
-
 import scala.language.strictEquality
 import scala.collection.mutable
 
@@ -9,8 +7,6 @@ opaque type MAC = String
 type MACError = String
 
 object MAC:
-  val hexChars = "0123456789abcdef"
-  
   def apply(mac: String): Either[MACError, MAC] =
     Either.cond(
       mac.length == 12,
