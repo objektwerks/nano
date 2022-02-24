@@ -16,3 +16,9 @@ class MACTest extends AnyFunSuite with Matchers:
     mac.isLeft shouldBe true
     mac.foreach(a => a shouldBe "")
   }
+
+  test("display mac") {
+    val address = "1a2b3c4d5e6f"
+    val mac = MAC(address)
+    mac.foreach(a => a.display shouldBe "1a:2b:3c:4d:5e:6f")
+  }
