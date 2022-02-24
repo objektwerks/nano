@@ -22,7 +22,6 @@ final case class Router(circuits: Seq[Circuit],
                         transceiver: Transceiver,
                         networkInterface: NetworkInterface) extends NanoParticle
 
-type MAC = String
 final case class NetworkInterface(mac: MAC, circuits: Seq[Circuit]) extends NanoParticle
 
 enum Walled:
