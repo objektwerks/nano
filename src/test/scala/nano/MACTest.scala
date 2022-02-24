@@ -4,7 +4,7 @@ import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 
 class MACTest extends AnyFunSuite with Matchers:
-  private val address = "1a2b3c4d5e6f"
+  private val address = "50ed3c45f4ba"
 
   test("valid mac") {
     val mac = MAC(address)
@@ -20,11 +20,12 @@ class MACTest extends AnyFunSuite with Matchers:
 
   test("display mac") {
     val mac = MAC(address)
-    mac.foreach(a => a.display shouldBe "1a:2b:3c:4d:5e:6f")
+    mac.foreach(a => a.display shouldBe "50:ed:3c:45:f4:ba")
   }
 
   test("number mac") {
     val mac = MAC(address)
-    mac.foreach(a => a.number shouldBe 411)
+    mac.foreach(a => a.number shouldBe 876)
     mac.foreach(a => println(a.number))
+    MAC("CAFE").foreach(a => println(a.number))
   }

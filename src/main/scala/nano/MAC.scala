@@ -13,7 +13,7 @@ object MAC:
     Either.cond(
       mac.length == 12,
       mac,
-      s"MAC length must be 12, not ${mac.length}."
+      s"MAC length must be 12, not ${mac.length} for $mac."
     )
 
 given CanEqual[MAC, MAC] = CanEqual.derived
@@ -34,10 +34,10 @@ extension (mac: MAC)
   def number: Long =
     val chars = mac.toArray
     val builder = mutable.ArrayBuffer[Long]()
-    builder += Integer.parseInt( s"${chars(0)}${chars(1)}", 16)
-    builder += Integer.parseInt( s"${chars(2)}${chars(3)}", 16)
-    builder += Integer.parseInt( s"${chars(4)}${chars(5)}", 16)
-    builder += Integer.parseInt( s"${chars(6)}${chars(7)}", 16)
-    builder += Integer.parseInt( s"${chars(8)}${chars(9)}", 16)
-    builder += Integer.parseInt( s"${chars(10)}${chars(11)}", 16)
+    builder += Integer.parseInt( s"${chars(0)}${chars(1)}", 16 )
+    builder += Integer.parseInt( s"${chars(2)}${chars(3)}", 16 )
+    builder += Integer.parseInt( s"${chars(4)}${chars(5)}", 16 )
+    builder += Integer.parseInt( s"${chars(6)}${chars(7)}", 16 )
+    builder += Integer.parseInt( s"${chars(8)}${chars(9)}", 16 )
+    builder += Integer.parseInt( s"${chars(10)}${chars(11)}", 16 )
     builder.sum
