@@ -8,3 +8,8 @@ class MACTest extends AnyFunSuite with Matchers:
     val mac = MAC("1a2b3c4d5e6f")
     mac.isRight shouldBe true
   }
+
+  test("invalid mac") {
+    val mac = MAC("1a2b3c")
+    mac.isLeft shouldBe true
+  }
