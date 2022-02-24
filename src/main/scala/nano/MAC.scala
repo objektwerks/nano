@@ -34,11 +34,11 @@ extension (mac: MAC)
   def number: Long =
     val base = 16
     val chars = mac.toArray
-    var builder = 0L
-    builder += Integer.parseInt( s"${chars(0)}${chars(1)}", base )
-    builder += Integer.parseInt( s"${chars(2)}${chars(3)}", base )
-    builder += Integer.parseInt( s"${chars(4)}${chars(5)}", base )
-    builder += Integer.parseInt( s"${chars(6)}${chars(7)}", base )
-    builder += Integer.parseInt( s"${chars(8)}${chars(9)}", base )
-    builder += Integer.parseInt( s"${chars(10)}${chars(11)}", base )
-    builder
+    var n = 0L
+    n += Integer.parseInt( s"${chars(0)}${chars(1)}", base )
+    n += Integer.parseInt( s"${chars(2)}${chars(3)}", base )
+    n += Integer.parseInt( s"${chars(4)}${chars(5)}", base )
+    n += Integer.parseInt( s"${chars(6)}${chars(7)}", base )
+    n += Integer.parseInt( s"${chars(8)}${chars(9)}", base )
+    n += Integer.parseInt( s"${chars(10)}${chars(11)}", base )
+    n
