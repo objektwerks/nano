@@ -9,6 +9,8 @@ opaque type MAC = String
 type MACError = String
 
 object MAC:
+  val hexChars = "0123456789abcdef"
+  
   def apply(mac: String): Either[MACError, MAC] =
     Either.cond(
       mac.length == 12,
@@ -31,4 +33,4 @@ extension (mac: MAC)
     builder += chars(8) += chars(9) += colon
     builder += chars(10) += chars(11)
     builder.toString
-  def number: Int = address.toLowerCase.toList.map("0123456789abcdef".indexOf(_)).reduce(_ * 16 + _)
+  def number: Int = address.toLowerCase.toList.map(MAC.hexChars.indexOf(_)).reduce(_ * 16 + _)
