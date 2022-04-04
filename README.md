@@ -24,6 +24,6 @@ Model
 Scale
 -----
 >Measurements to nanometers:
-1. meter = 1,000,000,000
-2. millimeter = 1,000,000
-3. micrometer = 1,000
+1. meter = 1,000,000,000 ( 1B )
+2. millimeter = 1,000,000 ( 1M )
+3. micrometer = 1,000 ( 1K )
